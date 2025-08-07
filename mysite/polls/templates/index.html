@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="container">
+    <h1>Available Polls</h1>
+    {% if latest_questions %}
+        <ul>
+        {% for q in latest_questions %}
+            <li><a href="{% url 'detail' q.id %}" class = "poll-link">{{q.question_text}}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-polls">No polls available.</p>
+    {% endif %}
+</div>
+{%endblock%}

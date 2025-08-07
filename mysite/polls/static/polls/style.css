@@ -1,0 +1,236 @@
+/* polls/static/polls/style.css */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for all content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Typography */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    margin: 20px 250px;
+    padding: 0;
+}
+
+.poll-link {
+    display: block; /* Makes the entire block clickable */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poll-link:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    text-decoration: none;
+}
+/* Forms */
+form {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Radio buttons styling */
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #3498db;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+label:hover {
+    background-color: #e3f2fd;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #2980b9, #1f618d);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+/* Error messages */
+.error-message {
+    background: #ff6b6b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Results page specific */
+.results-container {
+    text-align: center;
+}
+
+.vote-count {
+    background: #e8f5e8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+}
+
+.vote-again-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.vote-again-link:hover {
+    background: #219a52;
+    color: white;
+    text-decoration: none;
+}
+
+/* No polls message */
+.no-polls {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin: 50px 0;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    form {
+        padding: 20px;
+    }
+}
+
+.bottom-center-link {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-center-link:hover {
+    background-color: #e6e6e6;
+    text-decoration: none;
+
+}
