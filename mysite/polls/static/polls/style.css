@@ -64,19 +64,28 @@ ul {
 }
 
 li {
-    margin: 20px 250px;
-    padding: 0;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+  max-width: 90%;
 }
 
+
 .poll-link {
-    display: block; /* Makes the entire block clickable */
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 20px;
-    color: #000;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;             /* block-style but shrink-to-fit */
+  background: #f8f9fa;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  white-space: normal;              /* allow wrapping */
+  word-break: break-word;           /* break long words if needed */
+  max-width: 100%;                  /* limit width */
 }
+
+
 
 .poll-link:hover {
     transform: translateX(5px);
