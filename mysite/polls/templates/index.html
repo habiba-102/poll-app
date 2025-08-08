@@ -1,5 +1,18 @@
-{%extends 'base.html'%}
-{%block content%}
+{% load static %}
+<link rel="stylesheet" href={% static 'polls/style.css' %}>
+
+<div class="auth-buttons">
+  {% if user.is_authenticated %}
+    <span>Welcome, {{ user.username }}</span>
+    <form method = 'post' action = {% url 'logout'%} class = 'logout-form'>
+        {% csrf_token%}
+        <button type='submit' class="logout-button">Logout</button>
+    </form>
+  {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'signup'%}">Sign Up</a>
+  {% endif %}
+</div>
 
 <div class="container">
     <h1>Available Polls</h1>
@@ -13,4 +26,4 @@
         <p class="no-polls">No polls available.</p>
     {% endif %}
 </div>
-{%endblock%}
+

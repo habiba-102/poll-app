@@ -11,7 +11,7 @@
             {% endif %}
             {% for choice in question.choice_set.all %}
                 
-                <label for="choice{{ forloop.counter }}">
+                <label class = "vote-label" for="choice{{ forloop.counter }}">
                     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
                     {{ choice.choice_text }}
                 </label>

@@ -119,7 +119,7 @@ input[type="radio"] {
     accent-color: #3498db;
 }
 
-label {
+.vote-label {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -131,7 +131,7 @@ label {
     transition: background-color 0.5s ease;
 }
 
-label:hover {
+.vote-label:hover {
     background-color: #e3f2fd;
 }
 
@@ -242,4 +242,111 @@ input[type="submit"]:hover {
     background-color: #e6e6e6;
     text-decoration: none;
 
+}
+
+/* Login Form Enhancements */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background: linear-gradient(45deg, #2980b9, #2471a3);
+    transform: scale(1.02);
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.auth-buttons a {
+    margin-left: 15px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.auth-buttons a:hover {
+    background-color: #2980b9;
+}
+
+.auth-buttons span {
+    color: #fff;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+form.logout-form {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.logout-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #2980b9;
+}
+
+.helptext {
+    display: none;
 }
