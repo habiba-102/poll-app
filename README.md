@@ -26,7 +26,7 @@ A full-featured polling application built with Django that allows users to vote 
 
 | Signup Page |
 |:-----------:|
-| <img src="Screenshots/signup.PNG" alt="Signup Page" width="400"> |
+| <img src="Screenshots/signup-page.PNG" alt="Signup Page" width="400"> |
 | *User registration form* |
 
 ### Prerequisites
