@@ -18,7 +18,7 @@ A full-featured polling application built with Django that allows users to vote 
 ![Login Page](Screenshots/login-page.png)
 *User authentication system*
 
-![Signup Page](Screenshots/signup.png)
+![Signup Page](Screenshots/signup-page.png)
 *User registration form*
 
 ![Voting Interface](Screenshots/details-page.png)
