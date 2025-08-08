@@ -12,10 +12,20 @@ A full-featured polling application built with Django that allows users to vote 
 
 ### Screenshots
 
-- Clean, modern interface with gradient backgrounds
-- User authentication system
-- Real-time vote counting
-- Responsive design for mobile devices
+![Home Page](Screenshots/index-page.png)
+*Main polls listing with clean, modern interface*
+
+![Login Page](Screenshots/login-page.png)
+*User authentication system*
+
+![Signup Page](Screenshots/signup.png)
+*User registration form*
+
+![Voting Interface](Screenshots/details-page.png)
+*Poll detail page with voting options*
+
+![Results Page](Screenshots/results-page.png)
+*Vote results display with real-time counting*
 
 
 ### Prerequisites
