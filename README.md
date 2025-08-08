@@ -12,21 +12,22 @@ A full-featured polling application built with Django that allows users to vote 
 
 ### Screenshots
 
-![Home Page](Screenshots/index-page.PNG)
-*Main polls listing with clean, modern interface*
+### Screenshots
 
-![Login Page](Screenshots/login-page.PNG)
-*User authentication system*
+| Index Page | Detail Page |
+|:----------:|:-----------:|
+| <img src="Screenshots/index-page.PNG" alt="Index Page" width="400"> | <img src="Screenshots/details-page.PNG" alt="Details Page" width="400"> |
+| *Main polls listing page* | *Poll detail page with voting options* |
 
-![Signup Page](Screenshots/signup-page.PNG)
-*User registration form*
+| Results Page | Login Page |
+|:------------:|:----------:|
+| <img src="Screenshots/results-page.PNG" alt="Results Page" width="400"> | <img src="Screenshots/login-page.PNG" alt="Login Page" width="400"> |
+| *Poll results with vote counts* | *User login interface* |
 
-![Voting Interface](Screenshots/details-page.PNG)
-*Poll detail page with voting options*
-
-![Results Page](Screenshots/results-page.PNG)
-*Vote results display with real-time counting*
-
+| Signup Page |
+|:-----------:|
+| <img src="Screenshots/signup.PNG" alt="Signup Page" width="400"> |
+| *User registration form* |
 
 ### Prerequisites
 
